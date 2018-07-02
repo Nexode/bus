@@ -16,10 +16,11 @@ Subscribing:
 > Actually each unit of system can both publish and subscribe messages but it's better to consider it separately for simplicity.
 
 ```javascript
-const unit = bus.unit('service-2');
+const bus = require('@nexode/bus');
+const unit = bus.unit('service-1');
 
-unit.listen('service-1')
-    .on('greeting', async message => {
+unit.listen('service-2')
+    .on('greeting', message => {
         console.log(message.data.greeting);
         message.ack();
     });
@@ -34,7 +35,8 @@ unit.attach('amqp://guest:guest@amqp-server/vhost');
 Publishing:
 
 ```javascript
-const unit = bus.unit('service-1');
+const bus = require('@nexode/bus');
+const unit = bus.unit('service-2');
 
 unit.on('ready', () => {
     unit.publish('greeting', {
