@@ -1,0 +1,19 @@
+{
+  "name": "@nexode/bus",
+  "version": "0.0.1",
+  "description": "Simple Message Bus",
+  "main": "lib/index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "message",
+    "bus",
+    "amqp"
+  ],
+  "author": "Karabutin Alex <karabutin.alex@nexode.org>",
+  "license": "MIT",
+  "dependencies": {
+    "amqp": "^0.2.6"
+  },
+  "repository": "https://github.com/Nexode/bus.git"
+}
