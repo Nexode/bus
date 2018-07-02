@@ -39,9 +39,7 @@ const bus = require('@nexode/bus');
 const unit = bus.unit('service-2');
 
 unit.on('ready', () => {
-    unit.publish('greeting', {
-        greeting: 'Hello!'  
-    });
+    unit.publish('greeting', { greeting: 'Hello!' });
 });
 
 unit.on('error', error => {
