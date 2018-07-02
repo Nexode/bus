@@ -1,10 +1,10 @@
 {
   "name": "@nexode/bus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple Message Bus",
   "main": "lib/index.js",
-  "scripts": {
-  },
+  "types": "./lib/index.d.ts",
+  "scripts": {},
   "keywords": [
     "message",
     "bus",
@@ -13,6 +13,7 @@
   "author": "Karabutin Alex <karabutin.alex@nexode.org>",
   "license": "MIT",
   "dependencies": {
+    "@types/express-serve-static-core": "^4.16.0",
     "amqp": "^0.2.6"
   },
   "repository": "https://github.com/Nexode/bus.git"
